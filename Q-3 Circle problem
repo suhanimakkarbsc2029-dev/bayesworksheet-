@@ -1,0 +1,16 @@
+''' 
+Take as input: the centre of a circle (cx, cy), its radius r, and a point (px, py). Print whether the point is "Inside", "Outside", or "On" the circle.
+Try it on:
+• Centre (0, 0), radius 5, point (3, 4) • Centre (0, 0), radius 5, point (0, 6) • Centre (1, 1), radius 3, point (1, 4)'''
+
+c1,c2 = map(int,input(" enter the center coordinates with spaces in one line ").split());
+r = int(input("enter radius"));
+p1,p2=map(int,input(" enter the coordinates of the point with spaces in one line ").split());
+distance= (p1-c1)**2+(p2-c2)**2
+
+if distance<r**2:
+    print("point is inside the circle")
+elif distance>r**2:
+    print("point is outside the circle")
+else :
+     print("point is on the circle")
