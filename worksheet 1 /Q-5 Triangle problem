@@ -1,0 +1,18 @@
+#Take three numbers as input representing the sides of a triangle. First, check if a triangle with those sides can actually exist. If yes, compute the area. If no, say so clearly.
+
+a = int(input("enter the first number"))
+b = int(input("enter the second number"))
+c = int(input("enter the third number"))
+s = (a+b+c)/2
+area = (s*(s-a)*(s-b)*(s-c))**0.5
+
+if a+b>c and b+c>a and c+a>b:
+    print("its a triangle",area)
+else :
+    print("its not a triangle")  
+
+
+
+
+
+
