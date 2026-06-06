@@ -4,3 +4,4 @@ while x <= 1000:
     print(x)
     x *= 2   
 "it prints 10 values"
+
