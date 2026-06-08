@@ -1,7 +1,6 @@
 #Given a number N, print every prime number ≤ N.
 #Example: if N = 20, the output should be 2, 3, 5, 7, 11, 13, 17, 19.
 n=int(input("enter any number"))
-root=int(n**0.5+1)
 num=2
 while num<=n:
     root=int(num**0.5)+1
